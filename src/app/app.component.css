@@ -1,0 +1,21 @@
+.btn{
+
+}
+.min{
+    background-color: red;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+.reset{
+    background-color: aqua;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+.plus{
+    background-color: green;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
