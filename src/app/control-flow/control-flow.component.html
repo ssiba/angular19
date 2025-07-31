@@ -3,7 +3,7 @@
     @for (item of items; track item; let index =$index,first=$first,even=$even,odd=$odd) {
         <h2> Value:{{ item }}</h2>
         <h2>Index:{{$index}}</h2>
-        <h2>First:{{$first}}</h2>
+        <h2 [ngStyle]="{'background-color':first?'red':'black'}">First:{{$first}}</h2>
         <h2>Even:{{$even}}</h2>
         <h2>Odd:{{$odd}}</h2>
 
