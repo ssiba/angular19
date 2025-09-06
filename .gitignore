@@ -40,3 +40,28 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+#Angular Topic To Cover
+components
+directives
+pipes
+services
+guards
+interceptors
+modules
+routes
+reactive-forms vs template-driven forms
+state management
+dependency injection
+lazy loading
+change detection
+observables vs promises
+routing and navigation
+custome pipes
+custom directives
+
+
+#What is the difference between template-driven forms and reactive forms?
+Template-driven forms use Angular’s two-way data binding and are mostly written in the HTML template, 
+while reactive forms are more programmatic and allow for more complex validation and dynamic form controls. Reactive forms are built using the `FormControl`, `FormGroup`, and `FormArray` classes, providing a more structured approach to form management.
+in template-driven forms, the form controls are created in the template using directives like `ngModel`, while in reactive forms, the form controls are created in the component class and bound to the template using the `formControlName` directive.

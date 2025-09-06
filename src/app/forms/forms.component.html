@@ -1,0 +1,42 @@
+<form [formGroup]="userForms" (ngSubmit)="onSubmit()">
+        <label>Name:</label>
+        <input type="text" formControlName="name"/>
+        <label>Email:</label>
+        <input type="email" formControlName="email"/>
+        <label>Password:</label>
+        <input type="password" formControlName="password"/>
+        <label>Confirm Password:</label>
+        <input type="password" formControlName="confirmPassword"/>
+      <button type="submit">Submit</button>
+</form>
+<!-- <form [formGroup]="userForms" (ngSubmit)="onSubmit()">
+  <label>Name:</label>
+  <input type="text" formControlName="name" />
+  <div *ngIf="isFieldInvalid('name')">
+    <small *ngIf="userForms.get('name')?.errors?.['required']">Name is required.</small>
+    <small *ngIf="userForms.get('name')?.errors?.['minlength']">Name must be at least 3 characters long.</small>
+  </div>
+
+  <label>Email:</label>
+  <input type="email" formControlName="email" />
+  <div *ngIf="isFieldInvalid('email')">
+    <small *ngIf="userForms.get('email')?.errors?.['required']">Email is required.</small>
+    <small *ngIf="userForms.get('email')?.errors?.['email']">Invalid email format.</small>
+  </div>
+
+  <label>Password:</label>
+  <input type="password" formControlName="password" />
+  <div *ngIf="isFieldInvalid('password')">
+    <small *ngIf="userForms.get('password')?.errors?.['required']">Password is required.</small>
+    <small *ngIf="userForms.get('password')?.errors?.['minlength']">Password must be at least 6 characters long.</small>
+  </div>
+
+  <label>Confirm Password:</label>
+  <input type="password" formControlName="confirmPassword" />
+  <div *ngIf="isFieldInvalid('confirmPassword')">
+    <small *ngIf="userForms.get('confirmPassword')?.errors?.['required']">Confirm Password is required.</small>
+    <small *ngIf="userForms.errors?.['mismatch']">Passwords do not match.</small>
+  </div>
+
+  <button type="submit" [disabled]="userForms.invalid">Submit</button>
+</form> -->
